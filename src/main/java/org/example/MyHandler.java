@@ -131,7 +131,7 @@ public class MyHandler implements HttpHandler {
                     result=result+"<img src=\""+link[10]+"\"  width=\"50\" height=\"60\">";
                     break;
                 default:
-                    result="errore";
+                    result="<img src=\"https://cdn.pixabay.com/photo/2017/04/09/12/45/error-2215702_1280.png\"  width=\"500\" height=\"300\">"+res;
             }
         }
 
