@@ -70,7 +70,7 @@ public class MyHandler implements HttpHandler {
     }
 
     private String number(String res){
-        String link[] = new String[10];
+        String link[] = new String[11];
         link[0]="https://www.kindpng.com/picc/m/407-4079776_number-zero-png-0-png-transparent-png.png";
         link[1]="https://esquilo.io/png/thumb/vj9m09OLDtkDOHB-Vector-Number-1-PNG-HD.png";
         link[2]="https://www.pngplay.com/wp-content/uploads/5/Number-2-No-Background.png";
@@ -81,6 +81,7 @@ public class MyHandler implements HttpHandler {
         link[7]="https://www.kindpng.com/picc/m/117-1175117_number-7-on-a-transparent-background-hd-png.png";
         link[8]="https://icon2.cleanpng.com/20171220/ove/number-8-png-5a3a86fd760b34.7946325115137850854835.jpg";
         link[9]="https://png.pngitem.com/pimgs/s/462-4627994_9-png-image-without-background-number-9-transparent.png";
+        link[10]="https://upload.wikimedia.org/wikipedia/commons/e/ec/Minus_symbol.svg";
         String result="";
         String passed=res;
         String []splitted=passed.split("");
@@ -124,6 +125,10 @@ public class MyHandler implements HttpHandler {
 
                 case "9":
                     result=result+"<img src=\""+link[9]+"\"  width=\"50\" height=\"60\">";
+                    break;
+
+                case "-":
+                    result=result+"<img src=\""+link[10]+"\"  width=\"50\" height=\"60\">";
                     break;
                 default:
                     result="errore";
